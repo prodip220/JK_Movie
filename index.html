@@ -11,244 +11,521 @@
     <link rel="canonical" href="https://your-site-url.com/" />
 
     <meta name="google-site-verification" content="DwbAVtwLPFRxHJmMPqw_TLl0YXC7r9G8Hua_I4qRd80" />
-    <script src="https://pl29032866.profitablecpmratenetwork.com/11/39/40/113940308a1ea41a0f4fd0ddee402d9a.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-19B9HEX6E5"></script>
+
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
+
+      function gtag(){
+          dataLayer.push(arguments);
+      }
+
       gtag('js', new Date());
+
       gtag('config', 'G-19B9HEX6E5');
     </script>
 
     <style>
-        :root { --bg-color: #0c0d10; --card-bg: #1a1c22; --accent: #ffcc00; --text-main: #ffffff; --glass: rgba(255, 255, 255, 0.1); }
-        body { background: var(--bg-color); color: var(--text-main); font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; overflow-x: hidden; }
-        header { position: sticky; top: 0; width: 100%; z-index: 1000; background: rgba(12, 13, 16, 0.9); backdrop-filter: blur(15px); border-bottom: 1px solid var(--glass); }
-        .main-nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; }
-        .logo { font-size: 22px; font-weight: bold; color: var(--accent); text-decoration: none; }
-        .logo span { color: #fff; }
-        .icon-btn { background: var(--glass); border: none; color: white; padding: 8px; border-radius: 50%; cursor: pointer; font-size: 18px; }
-        #search-container { display: none; padding: 10px 20px; background: #1a1c22; }
-        #search-input { width: 100%; padding: 10px; border-radius: 5px; border: none; background: #333; color: white; }
-        .category-box { display: flex; gap: 10px; overflow-x: auto; padding: 10px 20px; scrollbar-width: none; }
-        
-        .cat-item { background: var(--glass); padding: 8px 20px; border-radius: 25px; font-size: 13px; cursor: pointer; white-space: nowrap; transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
-        .cat-item.active { background: var(--accent); color: #000; font-weight: bold; border-color: #fff; box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); }
-        .cat-item:hover { border-color: var(--accent); }
+        :root {
+            --bg-color: #0c0d10;
+            --card-bg: #1a1c22;
+            --accent: #ffcc00;
+            --text-main: #ffffff;
+            --glass: rgba(255, 255, 255, 0.1);
+        }
 
-        .content-area { padding: 15px 20px; }
-        .section-title { font-size: 16px; color: var(--accent); margin: 20px 0 10px; text-transform: uppercase; border-left: 3px solid var(--accent); padding-left: 10px; }
-        .container { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 15px; margin-bottom: 30px; }
-        .movie-card { background: var(--card-bg); border-radius: 12px; overflow: hidden; cursor: pointer; transition: 0.3s; position: relative; border: 1px solid #333; }
-        .movie-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .movie-card img { width: 100%; height: 230px; object-fit: cover; }
-        .movie-card h3 { font-size: 12px; margin: 0; text-align: center; padding: 10px; height: 35px; overflow: hidden; color: #fff; }
-        .rating { position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.8); color: #ffcc00; padding: 3px 8px; border-radius: 5px; font-size: 12px; font-weight: bold; z-index: 5; }
-        
-        #ad-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 10001; color: white; flex-direction: column; align-items: center; justify-content: center; backdrop-filter: blur(10px); }
-        .loader { text-align: center; padding: 20px; display: none; color: var(--accent); font-weight: bold; }
+        body {
+            background: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(12, 13, 16, 0.9);
+            backdrop-filter: blur(15px);
+            border-bottom: 1px solid var(--glass);
+        }
+
+        .main-nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .logo span {
+            color: #fff;
+        }
+
+        .icon-btn {
+            background: var(--glass);
+            border: none;
+            color: white;
+            padding: 8px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #search-container {
+            display: none;
+            padding: 10px 20px;
+            background: #1a1c22;
+        }
+
+        #search-input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background: #333;
+            color: white;
+        }
+
+        .category-box {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto;
+            padding: 10px 20px;
+            scrollbar-width: none;
+        }
+
+        .cat-item {
+            background: var(--glass);
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: 0.3s;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .cat-item.active {
+            background: var(--accent);
+            color: #000;
+            font-weight: bold;
+            border-color: #fff;
+            box-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+        }
+
+        .cat-item:hover {
+            border-color: var(--accent);
+        }
+
+        .content-area {
+            padding: 15px 20px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            color: var(--accent);
+            margin: 20px 0 10px;
+            text-transform: uppercase;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .movie-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: 0.3s;
+            position: relative;
+            border: 1px solid #333;
+        }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .movie-card h3 {
+            font-size: 12px;
+            margin: 0;
+            text-align: center;
+            padding: 10px;
+            height: 35px;
+            overflow: hidden;
+            color: #fff;
+        }
+
+        .rating {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            color: #ffcc00;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            z-index: 5;
+        }
+
+        .loader {
+            text-align: center;
+            padding: 20px;
+            display: none;
+            color: var(--accent);
+            font-weight: bold;
+        }
     </style>
 </head>
+
 <body>
 
-    <div id="ad-overlay">
-        <div class="ad-box" style="background:white; padding:10px; border-radius:10px; margin-bottom:20px;">
-            <script type="text/javascript">
-                atOptions = { 'key' : '723bc09c3bb81cc37dcc39806740dfcd', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
-            </script>
-            <script type="text/javascript" src="https://www.highperformanceformat.com/723bc09c3bb81cc37dcc39806740dfcd/invoke.js"></script>
-        </div>
-        <p id="ad-timer" style="font-weight: bold; font-size: 18px;">Loading Content in 5 seconds...</p>
+<header>
+
+    <div class="main-nav">
+
+        <button class="icon-btn">☰</button>
+
+        <a href="#" onclick="showCategoryAd('Home')" class="logo">
+            JK<span>Movies</span>
+        </a>
+
+        <button class="icon-btn" onclick="toggleSearch()">🔍</button>
+
     </div>
 
-    <header>
-        <div class="main-nav">
-            <button class="icon-btn">☰</button>
-            <a href="#" onclick="showCategoryAd('Home')" class="logo">JK<span>Movies</span></a>
-            <button class="icon-btn" onclick="toggleSearch()">🔍</button>
-        </div>
-        <div id="search-container"><input type="text" id="search-input" placeholder="Search movies..." onkeypress="handleSearchEnter(event)"></div>
-        <div class="category-box">
-            <div id="cat-Home" class="cat-item active" onclick="showCategoryAd('Home')">🏠 Home</div>
-            <div id="cat-Trending" class="cat-item" onclick="showCategoryAd('Trending')">🔥 Trending</div>
-            <div id="cat-Hollywood" class="cat-item" onclick="showCategoryAd('Hollywood')">🎬 Hollywood</div>
-            <div id="cat-Bollywood" class="cat-item" onclick="showCategoryAd('Bollywood')">🇮🇳 Bollywood</div>
-        </div>
-    </header>
+    <div id="search-container">
 
-    <div class="content-area">
-        <div class="section-title" id="main-title">🆕 New Releases (Hollywood & Bollywood)</div>
-        <div class="container" id="movie-grid"></div>
-        <div id="infinite-loader" class="loader">Loading More Movies...</div>
+        <input
+            type="text"
+            id="search-input"
+            placeholder="Search movies..."
+            onkeypress="handleSearchEnter(event)"
+        >
+
     </div>
 
-    <script>
-        const API_KEY = '0940ae0fad7498e6f74514a9691fb571';
-        let page = 1;
-        let isLoading = false;
-        let currentMode = 'Home';
-        let searchKeyword = '';
+    <div class="category-box">
 
-        window.onpopstate = function(event) {
-            if (event.state && event.state.mode) {
-                currentMode = event.state.mode;
-                updateHighlight(currentMode);
-                silentResetAndLoad(currentMode);
-            }
-        };
+        <div id="cat-Home"
+             class="cat-item active"
+             onclick="showCategoryAd('Home')">
+             🏠 Home
+        </div>
 
-        window.onpageshow = () => { 
-            document.getElementById('ad-overlay').style.display = 'none'; 
+        <div id="cat-Trending"
+             class="cat-item"
+             onclick="showCategoryAd('Trending')">
+             🔥 Trending
+        </div>
+
+        <div id="cat-Hollywood"
+             class="cat-item"
+             onclick="showCategoryAd('Hollywood')">
+             🎬 Hollywood
+        </div>
+
+        <div id="cat-Bollywood"
+             class="cat-item"
+             onclick="showCategoryAd('Bollywood')">
+             🇮🇳 Bollywood
+        </div>
+
+    </div>
+
+</header>
+
+<div class="content-area">
+
+    <div class="section-title" id="main-title">
+        🆕 New Releases (Hollywood & Bollywood)
+    </div>
+
+    <div class="container" id="movie-grid"></div>
+
+    <div id="infinite-loader" class="loader">
+        Loading More Movies...
+    </div>
+
+</div>
+
+<script>
+
+    const API_KEY = '0940ae0fad7498e6f74514a9691fb571';
+
+    let page = 1;
+    let isLoading = false;
+    let currentMode = 'Home';
+    let searchKeyword = '';
+
+    window.onpopstate = function(event) {
+
+        if (event.state && event.state.mode) {
+
+            currentMode = event.state.mode;
+
             updateHighlight(currentMode);
+
+            silentResetAndLoad(currentMode);
+        }
+    };
+
+    function toggleSearch() {
+
+        const sc = document.getElementById('search-container');
+
+        sc.style.display =
+            (sc.style.display === 'block')
+            ? 'none'
+            : 'block';
+
+        if(sc.style.display === 'block') {
+
+            document.getElementById('search-input').focus();
+        }
+    }
+
+    function updateHighlight(mode) {
+
+        document.querySelectorAll('.cat-item')
+            .forEach(el => el.classList.remove('active'));
+
+        const activeEl =
+            document.getElementById('cat-' + mode);
+
+        if (activeEl) {
+            activeEl.classList.add('active');
+        }
+    }
+
+    function showCategoryAd(type) {
+
+        updateHighlight(type);
+
+        resetAndLoad(type);
+    }
+
+    function resetAndLoad(type) {
+
+        page = 1;
+
+        currentMode = type;
+
+        document.getElementById('movie-grid').innerHTML = '';
+
+        history.pushState({ mode: type }, type, "");
+
+        const titles = {
+            'Home': '🆕 All',
+            'Trending': '🔥 Trending Now',
+            'Hollywood': '🎬 Hollywood Hits',
+            'Bollywood': '🇮🇳 Bollywood Blockbusters'
         };
 
-        function toggleSearch() {
-            const sc = document.getElementById('search-container');
-            sc.style.display = (sc.style.display === 'block') ? 'none' : 'block';
-            if(sc.style.display === 'block') document.getElementById('search-input').focus();
-        }
+        document.getElementById('main-title').innerText =
+            titles[type] || `Results for ${type}`;
 
-        function updateHighlight(mode) {
-            document.querySelectorAll('.cat-item').forEach(el => el.classList.remove('active'));
-            const activeEl = document.getElementById('cat-' + mode);
-            if (activeEl) activeEl.classList.add('active');
-        }
-
-        function showCategoryAd(type) {
-            updateHighlight(type);
-            const overlay = document.getElementById('ad-overlay');
-            let timeLeft = 5;
-            overlay.style.display = 'flex';
-            const timer = setInterval(() => {
-                timeLeft--;
-                document.getElementById('ad-timer').innerText = `Loading ${type} in ${timeLeft}s...`;
-                if (timeLeft <= 0) {
-                    clearInterval(timer);
-                    overlay.style.display = 'none';
-                    resetAndLoad(type);
-                }
-            }, 1000);
-        }
-
-        function resetAndLoad(type) {
-            page = 1;
-            currentMode = type;
-            document.getElementById('movie-grid').innerHTML = '';
-            history.pushState({ mode: type }, type, "");
-            const titles = { 'Home': '🆕 All ', 'Trending': '🔥 Trending Now', 'Hollywood': '🎬 Hollywood Hits', 'Bollywood': '🇮🇳 Bollywood Blockbusters' };
-            document.getElementById('main-title').innerText = titles[type] || `Results for ${type}`;
-            loadMovies();
-        }
-
-        function silentResetAndLoad(type) {
-            page = 1;
-            document.getElementById('movie-grid').innerHTML = '';
-            loadMovies();
-        }
-
-        async function loadMovies() {
-            if(isLoading) return;
-            isLoading = true;
-            document.getElementById('infinite-loader').style.display = 'block';
-
-            try {
-                let movies = [];
-                
-                // logic for Mixed Content (Home & Trending)
-                if(currentMode === 'Home' || currentMode === 'Trending') {
-                    const endpoint = currentMode === 'Home' ? 'now_playing' : 'popular';
-                    
-                    const [hRes, bRes] = await Promise.all([
-                        fetch(`https://api.themoviedb.org/3/movie/${endpoint}?api_key=${API_KEY}&with_original_language=en&page=${page}`),
-                        fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=hi&sort_by=popularity.desc&page=${page}`)
-                    ]);
-
-                    const hData = await hRes.json();
-                    const bData = await bRes.json();
-
-                    // Mixing Logic: Interleave Hollywood and Bollywood
-                    const maxLength = Math.max(hData.results.length, bData.results.length);
-                    for(let i=0; i < maxLength; i++) {
-                        if(bData.results[i]) movies.push(bData.results[i]); // First Bollywood
-                        if(hData.results[i]) movies.push(hData.results[i]); // Then Hollywood
-                    }
-                } 
-                else if(currentMode === 'Hollywood') {
-                    const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=en&page=${page}&sort_by=popularity.desc`);
-                    const data = await res.json();
-                    movies = data.results;
-                } 
-                else if(currentMode === 'Bollywood') {
-                    const res = await fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=hi&page=${page}&sort_by=popularity.desc`);
-                    const data = await res.json();
-                    movies = data.results;
-                } 
-                else if(currentMode === 'Search') {
-                    const res = await fetch(`https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchKeyword}&page=${page}`);
-                    const data = await res.json();
-                    movies = data.results;
-                }
-
-                renderMovies(movies);
-                page++;
-            } catch (err) { console.error("Fetch Error:", err); }
-            
-            isLoading = false;
-            document.getElementById('infinite-loader').style.display = 'none';
-        }
-
-        function renderMovies(movies) {
-            const grid = document.getElementById('movie-grid');
-            movies.forEach(movie => {
-                if (!movie.poster_path) return;
-                const card = document.createElement('div');
-                card.className = 'movie-card';
-                const rating = movie.vote_average ? movie.vote_average.toFixed(1) : 'N/A';
-                card.innerHTML = `
-                    <div class="rating">⭐ ${rating}</div>
-                    <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}" alt="${movie.title}" loading="lazy">
-                    <h3>${movie.title}</h3>
-                `;
-                card.onclick = () => movieClickWithAd(movie.title);
-                grid.appendChild(card);
-            });
-        }
-
-        function movieClickWithAd(title) {
-            const overlay = document.getElementById('ad-overlay');
-            let timeLeft = 5;
-            overlay.style.display = 'flex';
-            const timer = setInterval(() => {
-                timeLeft--;
-                document.getElementById('ad-timer').innerText = `Redirecting in ${timeLeft}s...`;
-                if (timeLeft <= 0) {
-                    clearInterval(timer);
-                    overlay.style.display = 'none';
-                    // Redirecting to your target site
-                    window.location.href = "https://prmovies.pizza/?s=" + encodeURIComponent(title);
-                }
-            }, 1000);
-        }
-
-        function handleSearchEnter(event) {
-            if (event.key === 'Enter') {
-                searchKeyword = document.getElementById('search-input').value;
-                if(searchKeyword) {
-                    document.querySelectorAll('.cat-item').forEach(el => el.classList.remove('active'));
-                    resetAndLoad('Search');
-                }
-            }
-        }
-
-        window.addEventListener('scroll', () => {
-            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 800) {
-                loadMovies();
-            }
-        });
-
-        // Start App
-        history.replaceState({ mode: 'Home' }, 'Home', "");
         loadMovies();
-    </script>
+    }
+
+    function silentResetAndLoad(type) {
+
+        page = 1;
+
+        document.getElementById('movie-grid').innerHTML = '';
+
+        loadMovies();
+    }
+
+    async function loadMovies() {
+
+        if(isLoading) return;
+
+        isLoading = true;
+
+        document.getElementById('infinite-loader').style.display = 'block';
+
+        try {
+
+            let movies = [];
+
+            if(currentMode === 'Home' || currentMode === 'Trending') {
+
+                const endpoint =
+                    currentMode === 'Home'
+                    ? 'now_playing'
+                    : 'popular';
+
+                const [hRes, bRes] = await Promise.all([
+
+                    fetch(`https://api.themoviedb.org/3/movie/${endpoint}?api_key=${API_KEY}&with_original_language=en&page=${page}`),
+
+                    fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=hi&sort_by=popularity.desc&page=${page}`)
+                ]);
+
+                const hData = await hRes.json();
+
+                const bData = await bRes.json();
+
+                const maxLength =
+                    Math.max(hData.results.length, bData.results.length);
+
+                for(let i = 0; i < maxLength; i++) {
+
+                    if(bData.results[i]) {
+                        movies.push(bData.results[i]);
+                    }
+
+                    if(hData.results[i]) {
+                        movies.push(hData.results[i]);
+                    }
+                }
+
+            }
+            else if(currentMode === 'Hollywood') {
+
+                const res = await fetch(
+                    `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=en&page=${page}&sort_by=popularity.desc`
+                );
+
+                const data = await res.json();
+
+                movies = data.results;
+
+            }
+            else if(currentMode === 'Bollywood') {
+
+                const res = await fetch(
+                    `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=hi&page=${page}&sort_by=popularity.desc`
+                );
+
+                const data = await res.json();
+
+                movies = data.results;
+
+            }
+            else if(currentMode === 'Search') {
+
+                const res = await fetch(
+                    `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=${searchKeyword}&page=${page}`
+                );
+
+                const data = await res.json();
+
+                movies = data.results;
+            }
+
+            renderMovies(movies);
+
+            page++;
+
+        }
+        catch (err) {
+
+            console.error("Fetch Error:", err);
+        }
+
+        isLoading = false;
+
+        document.getElementById('infinite-loader').style.display = 'none';
+    }
+
+    function renderMovies(movies) {
+
+        const grid = document.getElementById('movie-grid');
+
+        movies.forEach(movie => {
+
+            if (!movie.poster_path) return;
+
+            const card = document.createElement('div');
+
+            card.className = 'movie-card';
+
+            const rating =
+                movie.vote_average
+                ? movie.vote_average.toFixed(1)
+                : 'N/A';
+
+            card.innerHTML = `
+                <div class="rating">⭐ ${rating}</div>
+
+                <img
+                    src="https://image.tmdb.org/t/p/w500${movie.poster_path}"
+                    alt="${movie.title}"
+                    loading="lazy"
+                >
+
+                <h3>${movie.title}</h3>
+            `;
+
+            // ONLY MOVIE CLICK REDIRECT
+            card.onclick = () => {
+
+                window.location.href =
+                    "https://prmovies.health/?s=" +
+                    encodeURIComponent(movie.title);
+            };
+
+            grid.appendChild(card);
+        });
+    }
+
+    function handleSearchEnter(event) {
+
+        if (event.key === 'Enter') {
+
+            searchKeyword =
+                document.getElementById('search-input').value;
+
+            if(searchKeyword) {
+
+                document.querySelectorAll('.cat-item')
+                    .forEach(el => el.classList.remove('active'));
+
+                resetAndLoad('Search');
+            }
+        }
+    }
+
+    window.addEventListener('scroll', () => {
+
+        if (
+            window.innerHeight + window.scrollY
+            >= document.body.offsetHeight - 800
+        ) {
+            loadMovies();
+        }
+    });
+
+    history.replaceState({ mode: 'Home' }, 'Home', "");
+
+    loadMovies();
+
+</script>
+
 </body>
 </html>
